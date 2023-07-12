@@ -1,0 +1,24 @@
+// colors
+
+$bg: #191a1f;
+$white: #ffffff;
+$gray: #606168;
+$hover-menu: #7e8088;
+$gray-hover: #adafb9;
+$yellow: #ffc266;
+
+// mixins
+
+@mixin btnGradient {
+  background: linear-gradient(132deg, #e8c24f 0%, #dd475e 100%),
+    radial-gradient(
+      92.36% 109.77% at 97.99% 8.62%,
+      #eb5323 0%,
+      #811c5e 80.59%,
+      #300947 100%
+    );
+  box-shadow: 3px -3px 17px 0px rgba(193, 62, 54, 0.45) inset,
+    -14.5651216506958px 0px 18.206401824951172px 0px rgba(245, 178, 60, 0.2) inset,
+    8px 2px 11px 0px rgba(255, 255, 255, 0.16) inset,
+    -3px -3px 17px 0px rgba(0, 0, 0, 0.25) inset;
+}
