@@ -20,7 +20,11 @@
     <header class="header">
       <div class="container header__container">
         <a href="" class="logo">
-          <img class="logo__img" src="assets/images/logo.svg" alt="logo-img" />
+          <img
+            class="logo__img svg-logo-dims"
+            src="assets/images/sprite.svg#logo"
+            alt="logo-img"
+          />
           <div class="logo__name">0Xprocessing</div>
         </a>
         <nav class="menu">
@@ -61,7 +65,11 @@
         <button class="btn hero__btn" type="button">Send a request</button>
         <div class="hero__box">
           <div class="hero__box-img">
-            <img src="assets/images/security.svg" alt="security-icon" />
+            <img
+              src="assets/images/sprite.svg#security"
+              class="svg-security-dims"
+              alt="security-icon"
+            />
           </div>
           <div class="hero__box-text">
             Highest level of technology and security in the payment industry.
@@ -72,9 +80,9 @@
 
     <section class="comparsion">
       <div class="container">
-        <h2 class="comparison__title">
+        <h3 class="comparison__title">
           A comparison of payment processing platforms:
-        </h2>
+        </h3>
         <div class="comparsion__header">
           <div class="comparsion__header-item comparison__item--color">
             0Xprocessing
@@ -319,7 +327,10 @@
               solution.
             </li>
             <li class="features__text">
-              <img src="assets/images/security.svg" alt="security-icon" />
+              <img
+                src="assets/images/sprite.svg#security"
+                alt="security-icon"
+              />
               Your personal area will be protected by dual authorization. You
               can add several managers to maintain a personal area.
             </li>
@@ -397,6 +408,155 @@
           <div class="features__slider-item">
             <div class="features__slider-content">
               Powerful real-time reporting
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="container">
+        <h2 class="title advantages__title">advantages</h2>
+        <div class="advantages__box">
+          <div class="advantages__box-title">
+            Key benefits of working with us
+          </div>
+          <div class="advantages__items">
+            <div class="advantages__item advantages__item--line-1">
+              Low fees
+            </div>
+            <div class="advantages__item advantages__item--line-2">
+              Individual approach
+            </div>
+            <div class="advantages__item advantages__item--line-3">
+              Fast account integration
+            </div>
+            <div class="advantages__item advantages__item--line-4">
+              Personal manager
+            </div>
+            <div class="btn advantages__item advantages__item--line-5">
+              Read more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="18"
+                viewBox="0 0 15 18"
+                fill="#FFC266"
+              >
+                <path
+                  d="M0 10.3278L2.08134 8.29426L6.02871 12.2057L6.02871 0.18421L8.97129 0.18421L8.97129 12.2057L12.8947 8.29426L15 10.3278L7.5 17.8158L0 10.3278Z"
+                />
+                <path
+                  d="M0 10.3278L2.08134 8.29426L6.02871 12.2057L6.02871 0.18421L8.97129 0.18421L8.97129 12.2057L12.8947 8.29426L15 10.3278L7.5 17.8158L0 10.3278Z"
+                />
+              </svg>
+            </div>
+
+            <ol class="advantages__more-list advantages__more-list--hide">
+              <li class="advantages__more-item">
+                Мы поможем избежать сотрудничества с банками.
+              </li>
+              <li class="advantages__more-item">
+                Криптопроцессинг будет самым быстрым решением. Достаточно
+                запустить наш сервис по API, и в считанные часы у вас будет
+                подключен платежный шлюз.
+              </li>
+              <li class="advantages__more-item">
+                Вы расширите свои возможности заработка на колебании курса
+                криптовалют (хеджирование вас защитит от волатильности рынка).
+              </li>
+              <li class="advantages__more-item">
+                Вы обезопасите себя от взломов и замораживания средств (все ваши
+                доходы вы можете выводить на децентрализованный кошелек, которым
+                управляете только вы).
+              </li>
+              <li class="advantages__more-item">
+                В Вашем личном кабинете есть возможность настроить
+                автоматический вывод средств по запросу клиента и добавить
+                менеджеров магазина, подтверждающих вывод средств клиентов от
+                указанной Вами суммы.
+              </li>
+            </ol>
+          </div>
+          <div class="advantahes__container">
+            <div class="advantages__content">
+              <p class="advantages__content-text">
+                <span>A large number of cryptocurrencies</span> with the ability
+                to add new ones (<i>at the request of the merchant</i>). In
+                addition, the merchant can set up any of the stablecoins
+                presented.
+                <span>Supported cryptocurrencies:</span>
+              </p>
+              <span class="devider">→</span>
+              <p class="advantages__content-currency">
+                BTC, BUSD, DAI, DASH, DOGE, ETH, HUSD, LTC, TUSD, USDC, USDT,
+                USDT (OMNI), XRP, TRX, USDT (TRC20), HT (TRC20), HUSD (TRC20),
+                ETH (TRC20), BNB, BUSD (BEP20), ETH (BEP20), DAI (BEP20), USDT
+                (BEP20), ADA (BEP20), USDC (BEP20)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="automated">
+      <div class="container">
+        <h3 class="small-title">Automated hedging</h3>
+        <div class="automated__box">
+          <div class="automated__box-before">
+            <div class="automated-item ethereum automated__item-before">
+              Ethereum
+            </div>
+            <div class="automated-item bnb automated__item-before">BNB</div>
+            <div class="automated-item doge automated__item-before">Doge</div>
+            <div class="automated-item bitcoin automated__item-before">
+              Bitcoin
+            </div>
+            <div class="automated-item other automated__item-before">
+              Other...
+            </div>
+          </div>
+          <div class="automated__box-after">
+            <div class="automated__box-after-outer">
+              <div class="automated__box-after-content">
+                <div class="logo__name">0Xprocessing</div>
+                <span class="devider">→</span>
+                <div>
+                  <div class="automated-item usdt automated-item-after">
+                    USDT
+                  </div>
+                  <div class="automated-item busd automated-item-after">
+                    BUSD
+                  </div>
+                  <div class="automated-item usdc automated-item-after">
+                    USDC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="automated__box-after-text">
+              Automated hedging allows you to accept any cryptocurrency from the
+              user, and without losing money on volatility, convert the
+              cryptocurrency to your balance in stabelcoin.
+            </p>
+          </div>
+        </div>
+        <div class="automated__content">
+          <p class="automated__content-left">
+            <span>Real-time exchange rates.</span> For clients of the merchant,
+            the rate in the local currency (optional) is displayed in the
+            payment. Also, displaying of any exchange rates is possible.
+          </p>
+          <div class="automated__content-right">
+            <div class="automated__content-right-title">
+              Supported currencies
+            </div>
+            <span class="devider">→</span>
+            <div class="automated__content-right-text">
+              RUB, AUD, AZN, GBP, AMD, BYN, BGN, BRL, HUF, HKD, DKK, USD, EUR,
+              INR, KZT, CAD, KGS, CNY, MDL, NOK, PLN, RON, XDR, SGD, TJS, TRY,
+              TMT, UZS, UAH, CZK, SEK, CHF, ZAR, KRW, JPY
             </div>
           </div>
         </div>

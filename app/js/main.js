@@ -58,7 +58,38 @@ featuresBtn.addEventListener("click", () => {
     featuresBox.style.maxHeight = featuresBoxMaxHeight + "px";
   }
 
+  featuresBtn.classList.toggle("features__btn--rotate");
   featuresBox.classList.toggle("features__box--show");
+});
+
+// advantages
+
+const advantagesBtn = document.querySelector(".advantages__item--line-5");
+const advantagesBlock = document.querySelector(".advantages__more-list");
+const advantagesItem = Array.from(
+  document.querySelectorAll(".advantages__more-item")
+);
+
+let advantagesBlockMaxHeight = null;
+const advantagesBlockMinHeight = 0;
+
+advantagesBlock.style.maxHeight = advantagesBlockMinHeight + "px";
+
+advantagesBtn.addEventListener("click", () => {
+  if (!advantagesBlockMaxHeight) {
+    advantagesBlockMaxHeight = advantagesItem.reduce(
+      (prev, acum) => (prev += acum.offsetHeight),
+      0
+    );
+  }
+
+  if (advantagesBlock.classList.contains("advantages__more-list--hide")) {
+    advantagesBlock.style.maxHeight = advantagesBlockMaxHeight + "px";
+  } else {
+    advantagesBlock.style.maxHeight = advantagesBlockMinHeight + "px";
+  }
+  advantagesBlock.classList.toggle("advantages__more-list--hide");
+  advantagesBtn.classList.toggle("advantages__item-more--show");
 });
 
 // slick slider

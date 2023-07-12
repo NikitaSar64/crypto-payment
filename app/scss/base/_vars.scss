@@ -9,7 +9,7 @@ $yellow: #ffc266;
 
 // mixins
 
-@mixin btnGradient {
+@mixin btnBgGradient {
   background: linear-gradient(132deg, #e8c24f 0%, #dd475e 100%),
     radial-gradient(
       92.36% 109.77% at 97.99% 8.62%,
@@ -17,6 +17,9 @@ $yellow: #ffc266;
       #811c5e 80.59%,
       #300947 100%
     );
+}
+
+@mixin btnBoxShadow {
   box-shadow: 3px -3px 17px 0px rgba(193, 62, 54, 0.45) inset,
     -14.5651216506958px 0px 18.206401824951172px 0px rgba(245, 178, 60, 0.2) inset,
     8px 2px 11px 0px rgba(255, 255, 255, 0.16) inset,
