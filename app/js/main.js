@@ -92,6 +92,35 @@ advantagesBtn.addEventListener("click", () => {
   advantagesBtn.classList.toggle("advantages__item-more--show");
 });
 
+// additional features
+
+const additionalBtn = document.querySelector(".whitelabel__btn");
+const additionalTextItem = Array.from(
+  document.querySelectorAll(".additional__item")
+);
+const additionalBox = document.querySelector(".additional__list");
+
+let additionalBoxMaxHeight = null;
+const additionalBoxMinHeight = 0;
+
+additionalBtn.addEventListener("click", () => {
+  if (!additionalBoxMaxHeight) {
+    additionalBoxMaxHeight = additionalTextItem.reduce(
+      (prev, acum) => (prev += acum.offsetHeight),
+      0
+    );
+  }
+
+  if (additionalBox.classList.contains("additional__list--hide")) {
+    additionalBox.style.maxHeight = additionalBoxMaxHeight + "px";
+  } else {
+    additionalBox.style.maxHeight = additionalBoxMinHeight + "px";
+  }
+
+  additionalBox.classList.toggle("additional__list--hide");
+  additionalBtn.classList.toggle("whitelabel__btn--show");
+});
+
 // slick slider
 
 import "slick-carousel";
