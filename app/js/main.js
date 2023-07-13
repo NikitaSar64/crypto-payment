@@ -1,3 +1,16 @@
+// hero
+
+const heroBtn = document.querySelector(".hero__btn");
+
+heroBtn.addEventListener("click", () => {
+  window.scroll({
+    top: document.body.scrollHeight,
+    behavior: "smooth",
+  });
+});
+
+// comparison
+
 const showMoreBtn = document.querySelector(".comparsion__btn");
 const comparisonBlock = document.querySelector(".comparsion__content");
 

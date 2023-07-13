@@ -60,6 +60,11 @@ img {
   object-fit: cover;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 100px;
+}
+
 body {
   background-color: $bg;
 
@@ -77,6 +82,8 @@ body {
     @include btnBoxShadow;
   }
 }
+
+/* start-main page */
 
 /* start-header */
 
@@ -1187,7 +1194,7 @@ body {
   padding: 40px 0;
 }
 
-.wallets__item {
+.wallet-item {
   flex-basis: 140px;
 
   color: $white;
@@ -1199,7 +1206,7 @@ body {
   text-align: center;
 }
 
-.wallets__wrapper {
+.wallet-icon {
   background: none;
 
   border-radius: 56px;
@@ -1214,7 +1221,7 @@ body {
   }
 }
 
-.wallets__icon {
+.wallet-icon__wrapper {
   border-radius: 56px;
   border: 1px solid #433f49;
 
@@ -1784,7 +1791,7 @@ body {
   background-image: url("../assets/images/sprite.svg#linkedin");
 }
 
-.form {
+.footer__form {
   flex-grow: 1;
 
   padding: 5px 0;
@@ -1793,8 +1800,6 @@ body {
 .form__input {
   display: block;
 
-  border-bottom: 1px solid #e1e1e1;
-
   padding: 16px 0;
 
   margin-bottom: 15px;
@@ -1802,8 +1807,29 @@ body {
   width: 100%;
 
   &::placeholder {
-    color: $bg;
     font-size: 20px;
+  }
+}
+
+.form__input--light {
+  color: $bg;
+
+  border-bottom: 1px solid #e1e1e1;
+  &::placeholder {
+    color: $bg;
+  }
+}
+
+.form__input--dark {
+  background: #262429;
+
+  color: $hover-menu;
+
+  padding-left: 30px;
+
+  border-bottom: 1px solid #433f49;
+  &::placeholder {
+    color: $hover-menu;
   }
 }
 
@@ -1820,3 +1846,412 @@ body {
   padding: 12px 28px 16px;
 }
 /* end-footer */
+
+/* end-main page */
+
+/* start-breadcrumbs */
+
+.breadcrumbs {
+  padding: 50px 0;
+  a {
+    color: #7e8088;
+
+    font-size: 22px;
+    line-height: 130%;
+
+    &:hover {
+      color: $gray-hover;
+    }
+  }
+
+  svg {
+    margin: 0 16px;
+  }
+}
+
+/* end-breadcrumbs */
+
+/* start-contact page */
+
+.contacts {
+  padding: 35px 0 97px;
+
+  position: relative;
+
+  overflow: hidden;
+  &::before {
+    content: "";
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../assets/images/sprite.svg#hero-bg");
+    background-repeat: no-repeat;
+
+    position: absolute;
+    top: -8%;
+    left: 78%;
+
+    z-index: -1;
+    transform: rotate(232deg);
+  }
+  &::after {
+    content: "";
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../assets/images/sprite.svg#hero-bg");
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+    top: 5%;
+    left: -85%;
+    z-index: -1;
+
+    filter: blur(30px);
+  }
+}
+
+.contacts__title {
+  margin-bottom: 30px;
+}
+
+.contacts__text {
+  color: $white;
+
+  font-size: 22px;
+
+  line-height: 150%;
+}
+
+.contacts__text--margin {
+  margin-bottom: 30px;
+}
+
+.contacts__content {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin: 121px 0px;
+}
+
+.contacts__email {
+  div {
+    color: $white;
+
+    font-size: 20px;
+
+    font-weight: 700;
+    line-height: 130%;
+    a {
+      color: $yellow;
+
+      display: block;
+    }
+  }
+  div + div {
+    margin-top: 26px;
+  }
+}
+
+.contacts__form {
+  max-width: 466px;
+  width: 100%;
+}
+
+/* end-contact page */
+
+/* start-fees page */
+
+/* start-transaction */
+
+.transaction {
+  padding: 34px 0 131px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.transaction__content {
+  max-width: 513px;
+  width: 100%;
+
+  margin-top: 40px;
+}
+
+.transaction__title {
+  span {
+    display: block;
+
+    font-style: italic;
+    font-weight: 400;
+
+    line-height: 57px;
+  }
+}
+
+.transaction__app {
+  max-width: 580px;
+  width: 100%;
+}
+
+.transaction__text {
+  color: $white;
+
+  font-size: 22px;
+
+  line-height: 130%;
+
+  margin-top: 34px;
+}
+
+.transaction__text-info {
+  color: #97959b;
+
+  font-size: 18px;
+
+  line-height: 130%;
+
+  margin-top: 38px;
+}
+
+.attention-icon {
+  &::after {
+    content: "i";
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #000;
+
+    font-weight: 700;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $yellow;
+
+    margin-left: 15px;
+  }
+}
+
+.transaction__app-icon {
+  position: relative;
+
+  padding: 20px;
+
+  &::before {
+    content: "";
+
+    width: 346px;
+    height: 326px;
+
+    background-image: url("../assets/images/sprite.svg#transaction-app-icon");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: absolute;
+    top: 49%;
+    left: 57%;
+
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* end-transaction */
+
+/* start-payments */
+
+.payments {
+  padding-bottom: 162px;
+}
+
+.fees-title {
+  color: $white;
+
+  font-family: "EuclidFlex";
+  font-size: 42px;
+
+  font-weight: 700;
+}
+
+.payments__content {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+.payment-item {
+  color: $white;
+
+  max-width: 330px;
+  width: 100%;
+
+  text-align: center;
+
+  height: 316px;
+
+  position: relative;
+
+  .wallet-icon {
+    margin: 0 auto;
+  }
+}
+
+.payment-item__title {
+  font-size: 20px;
+  font-weight: 700;
+
+  margin-top: 12px;
+}
+
+.payment-item__text {
+  font-family: "EuclidTriangle";
+
+  font-size: 20px;
+}
+
+.payment-item__rate {
+  font-size: 20px;
+
+  position: absolute;
+
+  bottom: 0;
+
+  width: 100%;
+}
+
+.payments__wrapper {
+  background: linear-gradient(90deg, rgb(221, 71, 94), rgb(109, 21, 118));
+
+  padding: 2px;
+
+  border-radius: 32px;
+
+  margin-top: 160px;
+}
+
+.payments__about {
+  border-radius: 32px;
+
+  background-color: $bg;
+
+  padding: 22px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.payments__about-title {
+  color: $white;
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  max-width: 312px;
+  width: 100%;
+}
+
+.payments__about-text {
+  max-width: 750px;
+  width: 100%;
+}
+
+/* end-payments */
+
+/* start-withdrawal */
+
+.withdrawal {
+  padding-bottom: 160px;
+
+  .fees-title {
+    letter-spacing: 3.2px;
+  }
+}
+
+.withdrawal__content {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+.withdrawal__box {
+  max-width: 584px;
+  width: 100%;
+}
+
+.withdrawal__box-header {
+  background: #262429;
+
+  display: flex;
+
+  color: $white;
+
+  font-size: 22px;
+  font-weight: 700;
+
+  margin-bottom: 25px;
+
+  padding: 25px 0;
+  div {
+    padding-left: 58px;
+
+    width: 50%;
+
+    letter-spacing: 1.32px;
+  }
+}
+
+.withdrawal__box-item {
+  border-radius: 20px;
+  border: 1px solid #433f49;
+
+  padding: 15px 0;
+
+  color: $white;
+
+  font-size: 18px;
+
+  display: flex;
+
+  letter-spacing: 1.08px;
+
+  div {
+    padding-left: 58px;
+    width: 50%;
+  }
+}
+
+.withdrawal__box-currency {
+  display: flex;
+  align-items: center;
+
+  &::before {
+    display: inline-block;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 10px;
+  }
+  &::after {
+    content: none;
+  }
+}
+
+/* end-withdrawal */
+
+/* end-fees apge */
