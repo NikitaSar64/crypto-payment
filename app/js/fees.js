@@ -2,38 +2,26 @@
 
 const showMoreBtn = document.querySelector(".withdrawal__btn");
 const withdrawalBlock = document.querySelector(".withdrawal__content");
-const withdrawalItems = Array.from(
-  document.querySelector(".withdrawal__box").children
-);
 const withdrawalItemsHide = document.querySelectorAll(
   '.withdrawal__box-item[data-item="hide"]'
 );
 
-const withdrawalBlockMinHeight = 285;
-let withdrawalBlockMaxHeight = null;
+const withdrawalBlockMinHeight = 285 + "px";
+let withdrawalBlockMaxHeight = withdrawalBlock.scrollHeight + 5 + "px";
 
-withdrawalBlock.style.maxHeight = withdrawalBlockMinHeight + "px";
+withdrawalBlock.style.maxHeight = withdrawalBlockMinHeight;
 
 showMoreBtn.addEventListener("click", () => {
-  setVisibleComparsion();
+  setVisibleWithdrawal();
   showMoreBtn.classList.toggle("withdrawal__btn--active");
 });
 
-function setVisibleComparsion() {
-  if (!withdrawalBlockMaxHeight) {
-    withdrawalBlockMaxHeight = withdrawalItems.reduce(
-      (prev, acum) => (prev += acum.offsetHeight + 15),
-      0
-    );
-  }
-
-  if (withdrawalBlock.classList.contains("withdrawal__content--hide")) {
-    withdrawalBlock.style.maxHeight = withdrawalBlockMaxHeight + "px";
+function setVisibleWithdrawal() {
+  if (withdrawalBlock.style.maxHeight < withdrawalBlockMaxHeight) {
+    withdrawalBlock.style.maxHeight = withdrawalBlockMaxHeight;
   } else {
-    withdrawalBlock.style.maxHeight = withdrawalBlockMinHeight + "px";
+    withdrawalBlock.style.maxHeight = withdrawalBlockMinHeight;
   }
-
-  withdrawalBlock.classList.toggle("withdrawal__content--hide");
 
   for (let node of withdrawalItemsHide) {
     node.classList.toggle("withdrawal__box-item--border");

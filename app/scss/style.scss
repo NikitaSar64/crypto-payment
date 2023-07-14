@@ -2233,9 +2233,7 @@ body {
   margin-top: 40px;
 
   transition: max-height 500ms ease;
-}
 
-.withdrawal__content--hide {
   overflow: hidden;
 }
 
@@ -2382,3 +2380,657 @@ body {
 /* end-withdrawal */
 
 /* end-fees apge */
+
+/* start-business apge */
+
+/* start-tools */
+
+.tools {
+  padding: 35px 0 161px;
+
+  position: relative;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &::before {
+    content: "";
+
+    background-image: url("../assets/images/sprite.svg#hero-bg");
+    background-position: 53%;
+    background-repeat: no-repeat;
+
+    width: 388px;
+    height: 360px;
+
+    position: absolute;
+    top: -10%;
+    left: 46%;
+    z-index: -1;
+
+    transform: rotate(1deg);
+  }
+}
+
+.tools__title {
+  margin-bottom: 28px;
+  span {
+    font-style: italic;
+    font-weight: 400;
+
+    display: block;
+  }
+}
+
+.tools__text {
+  color: $white;
+
+  font-size: 22px;
+
+  line-height: 130%;
+
+  margin-bottom: 28px;
+
+  &:last-of-type {
+    margin-bottom: 15px;
+  }
+}
+
+.tools__content {
+  max-width: 513px;
+  width: 100%;
+}
+
+.tools__app {
+  max-width: 580px;
+  width: 100%;
+
+  & > div {
+    background-color: transparent;
+  }
+
+  .app__content {
+    padding: 20px;
+  }
+}
+
+/* end-tools */
+
+/* start-shopping */
+
+.shopping {
+  padding-bottom: 160px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  border-radius: 56px;
+
+  padding: 1px;
+}
+
+.shopping__card {
+  max-width: 370px;
+  width: 100%;
+
+  text-align: center;
+
+  &:hover {
+    background: linear-gradient(45deg, rgb(232, 178, 79), rgb(221, 71, 94));
+  }
+  & > div {
+    padding: 20px 20px 30px;
+  }
+  .card__title {
+    margin: 8px 0 26px;
+  }
+  .card__text {
+    font-size: 20px;
+  }
+}
+
+.card__inner {
+  border-radius: 56px;
+
+  border: 1px solid #433f49;
+  background: #262429;
+
+  color: $white;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.card__text {
+  font-family: "EuclidTriangle";
+
+  font-weight: 400;
+}
+
+.shopping__more {
+  color: #97959b;
+
+  text-align: center;
+
+  font-size: 20px;
+
+  font-weight: 700;
+
+  margin-top: 57px;
+  margin-left: -25px;
+
+  position: relative;
+
+  cursor: pointer;
+
+  transition: color 500ms ease;
+
+  &:hover {
+    color: $white;
+  }
+
+  &::after {
+    content: "";
+
+    background-image: url("../assets/images/sprite.svg#arrow");
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    width: 20px;
+    height: 20px;
+
+    position: absolute;
+
+    top: 50%;
+    right: 101px;
+
+    transform: translateY(-50%);
+  }
+}
+
+/* end-shopping */
+
+/* start-questions */
+
+.questions {
+  padding-bottom: 160px;
+}
+
+.questions__title {
+  color: $white;
+
+  font-family: "EuclidFlex";
+
+  font-size: 42px;
+
+  font-weight: 700;
+
+  letter-spacing: 3.1px;
+
+  margin-bottom: 37px;
+}
+
+.accordion {
+  width: 100%;
+
+  padding: 28px 0;
+
+  color: $white;
+
+  font-size: 26px;
+
+  font-weight: 700;
+  line-height: 130%;
+
+  border-top: 2px solid #433f49;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  svg {
+    transition: all 0.2s ease-out;
+  }
+}
+
+.accordion--active {
+  svg {
+    transform: rotate(90deg);
+
+    fill: #433f49;
+  }
+}
+
+.panel {
+  color: $white;
+
+  max-width: 1096px;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+  color: $white;
+
+  font-size: 20px;
+  line-height: 150%;
+
+  span {
+    font-style: italic;
+
+    border-bottom: 1px solid $white;
+  }
+}
+
+.connect__list--color {
+  li {
+    margin-bottom: 10px;
+    &::marker {
+      color: $yellow;
+    }
+  }
+}
+
+.panel__list {
+  list-style-position: inside;
+
+  padding-bottom: 20px;
+  li {
+    &::marker {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%;
+    }
+    a {
+      color: $white;
+
+      font-weight: 700;
+
+      border-bottom: 2px solid $white;
+    }
+  }
+}
+
+.panel__title {
+  color: $white;
+
+  padding-left: 60px;
+
+  margin: 28px 0 20px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+
+    transform: translateY(-50%);
+
+    background-color: $yellow;
+
+    width: 27px;
+    height: 7px;
+  }
+}
+
+.work__list--color {
+  li {
+    margin-bottom: 24px;
+    &::marker {
+      color: $white;
+    }
+  }
+}
+
+.work__content-top {
+  margin-top: 31px;
+  margin-bottom: 78px;
+
+  display: flex;
+  align-items: center;
+  column-gap: 96px;
+  row-gap: 140px;
+  flex-wrap: wrap;
+}
+
+.work__content-item {
+  border-radius: 19.099px;
+  border: 1.364px solid;
+
+  color: #191a1f;
+
+  padding: 10.914px 27.284px 12.278px 27.284px;
+
+  text-align: center;
+
+  color: $white;
+
+  font-size: 16.37px;
+  font-weight: 700;
+  line-height: 150%;
+
+  position: relative;
+  &::after {
+    content: "";
+
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 72px;
+    height: 20px;
+  }
+  &::before {
+    position: absolute;
+
+    color: #97959b;
+
+    font-size: 15.818px;
+
+    font-weight: 700;
+    line-height: 150%;
+  }
+  &:nth-of-type(1) {
+    background-color: $yellow;
+
+    color: #191a1f;
+
+    max-width: 243px;
+
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-1");
+      right: -37%;
+    }
+    &::before {
+      content: "deposite";
+
+      top: -54%;
+      right: -36%;
+    }
+  }
+  &:nth-of-type(2) {
+    border-color: #e59a52;
+
+    max-width: 166px;
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-2");
+      right: -52%;
+    }
+    &::before {
+      content: "transfer";
+
+      top: -53%;
+      right: -48%;
+    }
+  }
+  &:nth-of-type(3) {
+    border-color: #e27957;
+
+    max-width: 162px;
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-3");
+      right: -52%;
+    }
+    &::before {
+      content: "transfer";
+
+      top: -19%;
+      right: -47%;
+    }
+  }
+  &:nth-of-type(4) {
+    border-color: #e0615a;
+
+    max-width: 215px;
+
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-5");
+      width: 67px;
+      height: 157px;
+
+      top: 233%;
+      right: 51%;
+    }
+    &::before {
+      content: "Staible coin transfer";
+
+      top: 191%;
+      right: -13%;
+      max-width: 106px;
+    }
+  }
+  &:nth-of-type(5) {
+    color: $white;
+
+    max-width: 149px;
+
+    border: none;
+
+    background: linear-gradient(45deg, rgb(232, 178, 79), rgb(221, 71, 94));
+
+    margin-left: auto;
+    margin-right: 20%;
+
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-4");
+      width: 39px;
+      height: 158px;
+
+      top: -94%;
+      left: -36%;
+    }
+    &::before {
+      content: "Hedge Payment";
+
+      top: -156%;
+      left: -121%;
+
+      max-width: 106px;
+    }
+  }
+}
+
+.work__content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.withdrawal-panel {
+  max-width: 742px;
+  width: 100%;
+  li {
+    margin-bottom: 5px;
+    ul {
+      margin-top: 11px;
+      li {
+        list-style-position: inside;
+        list-style-type: square;
+
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.work__text {
+  margin: 12px 0 40px;
+}
+
+.work__scheme {
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+  height: 407px;
+  .work__content-item {
+    margin: 0 auto;
+  }
+  .work__content-item:nth-of-type(1) {
+    max-width: 245px;
+
+    background-color: $yellow;
+
+    margin-bottom: 90px;
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-1");
+
+      right: 35%;
+      top: 175%;
+
+      transform: rotate(90deg);
+    }
+    &::before {
+      content: "withdraw request";
+
+      max-width: 96px;
+      top: 150%;
+      right: -5%;
+    }
+  }
+  .work__content-item:nth-of-type(2) {
+    max-width: 170px;
+
+    background-color: $bg;
+    border-color: #4a494d;
+
+    color: $white;
+
+    margin-bottom: 90px;
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-1");
+
+      right: 28%;
+      top: 147%;
+
+      transform: rotate(90deg);
+    }
+    &::before {
+      content: "withdraw request";
+
+      max-width: 96px;
+      top: 134%;
+      right: -28%;
+    }
+  }
+  .work__content-item:nth-of-type(3) {
+    max-width: 225px;
+
+    background: linear-gradient(45deg, rgb(232, 178, 79), rgb(221, 71, 94));
+
+    color: $white;
+    &::after {
+      background-image: url("../assets/images/sprite.svg#faq-work-arrow-6");
+
+      width: 46px;
+      height: 331px;
+
+      right: 106%;
+      top: -172%;
+    }
+    &::before {
+      content: "withdraw transfer";
+
+      top: -195%;
+      left: -172%;
+
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.cost__panel {
+  & p:last-child {
+    margin-bottom: 30px;
+  }
+  a {
+    color: $white;
+
+    font-weight: 700;
+
+    border-bottom: 2px solid $white;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.processing__panel {
+  border-bottom: 2px solid #433f49;
+
+  max-width: 100%;
+  a {
+    color: $white;
+
+    border-bottom: 1px solid $white;
+  }
+  p {
+    max-width: 1096px;
+    margin-bottom: 40px;
+  }
+}
+
+/* end-questions */
+
+/* start-help */
+
+.help {
+  padding-bottom: 160px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-image: url("../assets/images/sprite.svg#hero-bg");
+    background-position: 53%;
+    background-repeat: no-repeat;
+
+    height: 572px;
+    width: 100%;
+
+    top: 33%;
+    left: -50%;
+    z-index: -1;
+    transform: rotate(170deg);
+    filter: blur(23px);
+  }
+}
+
+.help__text {
+  color: $white;
+  font-size: 28px;
+
+  margin: 40px 0 63px;
+}
+
+.help__content {
+  max-width: 785px;
+
+  margin-left: auto;
+}
+
+/* end-help */
+
+/* end-business apge */

@@ -3,6 +3,7 @@ const config = {
   entry: {
     main: "./app/js/main.js",
     fees: "./app/js/fees.js",
+    business: "./app/js/business.js",
   },
   output: {
     filename: "[name].min.js",
