@@ -2,6 +2,7 @@ const config = {
   mode: "production",
   entry: {
     main: "./app/js/main.js",
+    fees: "./app/js/fees.js",
   },
   output: {
     filename: "[name].min.js",

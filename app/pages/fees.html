@@ -125,7 +125,7 @@
     <section class="withdrawal">
       <div class="container">
         <h2 class="fees-title">Current Withdrawal/Network Fees</h2>
-        <div class="withdrawal__content">
+        <div class="withdrawal__content withdrawal__content--hide">
           <div class="withdrawal__box">
             <div class="withdrawal__box-header">
               <div>Currency</div>
@@ -134,6 +134,31 @@
             <div class="withdrawal__box-item">
               <div class="withdrawal__box-currency bitcoin">Bitcoin BTC</div>
               <div class="withdrawal__box-price">0.00040000</div>
+            </div>
+            <div class="withdrawal__box-item">
+              <div class="withdrawal__box-currency bitcoin">Bitcoin BTC</div>
+              <div class="withdrawal__box-price">0.00040000</div>
+            </div>
+            <div
+              data-item="hide"
+              class="withdrawal__box-item withdrawal__box-item--border"
+            >
+              <div
+                class="withdrawal__box-currency bitcoin withdrawal__box-item--hide"
+              >
+                Bitcoin BTC
+              </div>
+              <div class="withdrawal__box-price withdrawal__box-item--hide">
+                0.00040000
+              </div>
+            </div>
+            <div class="withdrawal__box-item">
+              <div class="withdrawal__box-currency ethereum">Ethereum</div>
+              <div class="withdrawal__box-price">0.00040000</div>
+            </div>
+            <div class="withdrawal__box-item">
+              <div class="withdrawal__box-currency doge">Doge</div>
+              <div class="withdrawal__box-price">0.00010000</div>
             </div>
           </div>
           <div class="withdrawal__box">
@@ -144,12 +169,54 @@
             <div class="withdrawal__box-item">
               <div class="withdrawal__box-currency bitcoin">Bitcoin BTC</div>
               <div class="withdrawal__box-price">0.00040000</div>
+            </div>
+            <div class="withdrawal__box-item">
+              <div class="withdrawal__box-currency bitcoin">Bitcoin BTC</div>
+              <div class="withdrawal__box-price">0.00040000</div>
+            </div>
+            <div
+              data-item="hide"
+              class="withdrawal__box-item withdrawal__box-item--border"
+            >
+              <div
+                class="withdrawal__box-currency bitcoin withdrawal__box-item--hide"
+              >
+                Bitcoin BTC
+              </div>
+              <div class="withdrawal__box-price withdrawal__box-item--hide">
+                0.00040000
+              </div>
+            </div>
+            <div class="withdrawal__box-item">
+              <div class="withdrawal__box-currency ethereum">Ethereum</div>
+              <div class="withdrawal__box-price">0.00020000</div>
+            </div>
+            <div class="withdrawal__box-item">
+              <div class="withdrawal__box-currency doge">Doge</div>
+              <div class="withdrawal__box-price">0.00010000</div>
             </div>
           </div>
         </div>
+        <button type="button" class="btn withdrawal__btn">
+          Show more
+          <svg
+            width="15"
+            height="18"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#ffc266"
+          >
+            <path
+              d="M0 10.328l2.081-2.034 3.948 3.912V.184H8.97v12.022l3.924-3.912L15 10.328l-7.5 7.488L0 10.328z"
+            />
+            <path
+              d="M0 10.328l2.081-2.034 3.948 3.912V.184H8.97v12.022l3.924-3.912L15 10.328l-7.5 7.488L0 10.328z"
+            />
+          </svg>
+        </button>
       </div>
     </section>
 
     <!--=include footer.html -->
+    <script src="./js/fees.min.js"></script>
   </body>
 </html>

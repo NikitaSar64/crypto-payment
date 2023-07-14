@@ -78,7 +78,7 @@ function styles() {
 }
 
 function scripts() {
-  return src(["app/js/modules/*.js", "app/js/main.js"])
+  return src(["app/js/modules/*.js", "app/js/main.js", "app/js/fees.js"])
     .pipe(webpack(require("./webpack.config.js")))
     .pipe(dest("app/js"))
     .pipe(browserSync.stream());
@@ -93,7 +93,7 @@ function watching() {
 
   watch(["app/scss/**/*.scss"], styles);
   watch(["app/assets/images/src"], images);
-  watch(["app/js/main.js", "app/js/modules/*.js"], scripts);
+  watch(["app/js/main.js", "app/js/fees.js", "app/js/modules/*.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/*.html"]).on("change", browserSync.reload);
 }
@@ -108,6 +108,7 @@ function building() {
       "app/assets/images/sprite.svg",
       "app/assets/fonts/*.*",
       "app/js/main.min.js",
+      "app/js/fees.min.js",
       "app/*.html",
     ],
     {

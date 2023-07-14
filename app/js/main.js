@@ -134,6 +134,8 @@ additionalBtn.addEventListener("click", () => {
   additionalBtn.classList.toggle("whitelabel__btn--show");
 });
 
+// fees
+
 // slick slider
 
 import "slick-carousel";
