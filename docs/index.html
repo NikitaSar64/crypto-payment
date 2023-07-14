@@ -14,12 +14,12 @@
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="css/style.min.css" />
-    <title>Document</title>
+    <title>0Xprocessing</title>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="" class="logo">
+        <a href="index.html" class="logo">
           <img
             class="logo__img svg-logo-dims"
             src="assets/images/sprite.svg#logo"
@@ -29,20 +29,35 @@
         </a>
         <nav class="menu">
           <ul>
-            <li><a class="menu__item-link" href="#">Features</a></li>
-            <li><a class="menu__item-link" href="#">Advantages</a></li>
-            <li><a class="menu__item-link" href="#">Technical support</a></li>
-            <li><a class="menu__item-link" href="#">Integration</a></li>
-            <li><a class="menu__item-link" href="#">Fees</a></li>
-            <li><a class="menu__item-link" href="#">Business</a></li>
-            <li><a class="menu__item-link" href="#">Gambling</a></li>
-            <li><a class="menu__item-link" href="#">Contact us</a></li>
+            <li>
+              <a class="menu__item-link" href="index.html#features">Features</a>
+            </li>
+            <li>
+              <a class="menu__item-link" href="index.html#advantages">Advantages</a>
+            </li>
+            <li>
+              <a class="menu__item-link" href="index.html#support"
+                >Technical support</a
+              >
+            </li>
+            <li>
+              <a class="menu__item-link" href="index.html#integration"
+                >Integration</a
+              >
+            </li>
+            <li><a class="menu__item-link" href="fees.html">Fees</a></li>
+            <li><a class="menu__item-link" href="business.html">Business</a></li>
+            <li><a class="menu__item-link" href="gambling.html">Gambling</a></li>
+            <li>
+              <a class="menu__item-link" href="contacts.html">Contact us</a>
+            </li>
           </ul>
         </nav>
         <button type="button" class="btn header__btn-sign">Sign in</button>
         <button type="button" class="btn header__btn-lang">EN</button>
       </div>
     </header>
+    
 
     <section class="hero">
       <div class="container">
@@ -298,7 +313,7 @@
       </div>
     </section>
 
-    <section class="features">
+    <section class="features" id="features">
       <div class="container-fluid">
         <div class="container">
           <h2 class="title features__title">
@@ -327,7 +342,10 @@
               solution.
             </li>
             <li class="features__text">
-              <img src="assets/images/security.svg" alt="security-icon" />
+              <img
+                src="assets/images/sprite.svg#security"
+                alt="security-icon"
+              />
               Your personal area will be protected by dual authorization. You
               can add several managers to maintain a personal area.
             </li>
@@ -411,7 +429,7 @@
       </div>
     </section>
 
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <div class="container">
         <h2 class="title advantages__title">advantages</h2>
         <div class="advantages__box">
@@ -499,7 +517,7 @@
 
     <section class="automated">
       <div class="container">
-        <h3 class="small-title">Automated hedging</h3>
+        <h4 class="small-title">Automated hedging</h4>
         <div class="automated__box">
           <div class="automated__box-before">
             <div class="automated-item ethereum automated__item-before">
@@ -539,9 +557,425 @@
             </p>
           </div>
         </div>
-        <div class="automated__content"></div>
+        <div class="automated__content">
+          <p class="automated__content-left">
+            <span>Real-time exchange rates.</span> For clients of the merchant,
+            the rate in the local currency (optional) is displayed in the
+            payment. Also, displaying of any exchange rates is possible.
+          </p>
+          <div class="automated__content-right">
+            <div class="automated__content-right-title">
+              Supported currencies
+            </div>
+            <span class="devider">→</span>
+            <div class="automated__content-right-text">
+              RUB, AUD, AZN, GBP, AMD, BYN, BGN, BRL, HUF, HKD, DKK, USD, EUR,
+              INR, KZT, CAD, KGS, CNY, MDL, NOK, PLN, RON, XDR, SGD, TJS, TRY,
+              TMT, UZS, UAH, CZK, SEK, CHF, ZAR, KRW, JPY
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+
+    <section class="wallets">
+      <div class="container">
+        <h4 class="small-title">Web 3.0 wallets integration</h4>
+        <div class="wallets__items">
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-authereum-dims"
+                  src="assets/images/sprite.svg#authereum"
+                  alt="authereum"
+                />
+              </div>
+            </div>
+            Authereum
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-portis-dims"
+                  src="assets/images/sprite.svg#portis"
+                  alt="portis"
+                />
+              </div>
+            </div>
+            Portis
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-metamask-dims"
+                  src="assets/images/sprite.svg#metamask"
+                  alt="metamask"
+                />
+              </div>
+            </div>
+            Metamask
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-formatic-dims"
+                  src="assets/images/sprite.svg#formatic"
+                  alt="formatic"
+                />
+              </div>
+            </div>
+            Formatic
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-walletConnect-dims"
+                  src="assets/images/sprite.svg#walletConnect"
+                  alt="walletConnect"
+                />
+              </div>
+            </div>
+            WalletConnect
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-ledger-dims"
+                  src="assets/images/sprite.svg#ledger"
+                  alt="ledger"
+                />
+              </div>
+            </div>
+            Ledger
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-walletLink-dims"
+                  src="assets/images/sprite.svg#walletLink"
+                  alt="walletLink"
+                />
+              </div>
+            </div>
+            WalletLink
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-bitski-dims"
+                  src="assets/images/sprite.svg#bitski"
+                  alt="bitski"
+                />
+              </div>
+            </div>
+            Bitski
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-torus-dims"
+                  src="assets/images/sprite.svg#torus"
+                  alt="torus"
+                />
+              </div>
+            </div>
+            Torus
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-mew-dims"
+                  src="assets/images/sprite.svg#mew"
+                  alt="mew"
+                />
+              </div>
+            </div>
+            MEW
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-arkane-dims"
+                  src="assets/images/sprite.svg#arkane"
+                  alt="arkane"
+                />
+              </div>
+            </div>
+            Arkane
+          </div>
+          <div class="wallet-item">
+            <div class="wallet-icon">
+              <div class="wallet-icon__wrapper">
+                <img
+                  class="svg-binanceWallet-dims"
+                  src="assets/images/sprite.svg#binanceWallet"
+                  alt="binanceWallet"
+                />
+              </div>
+            </div>
+            Binance Wallet
+          </div>
+        </div>
+        <div class="wallets__content-wrapper">
+          <div class="wallets__content">
+            <div class="wallets__content-title">Connect</div>
+            <span class="devider">→</span>
+            <p class="wallets__content-text">
+              Integration with Web3.0 wallets allows you to pay for your product
+              or service in a few clicks for the user. All transactions are
+              controlled by the customer's digital signature. Shop customers can
+              pay their invoice in two clicks via the world's most popular
+              cryptocurrency wallet — Metamask.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="whitelabel">
+      <div class="container">
+        <h4 class="small-title">Whitelabel for the client</h4>
+        <div class="whitelabel-content">
+          <div class="whitelabel-content__box">
+            <p class="whitelabel-content__text text">
+              This is a unique opportunity for businesses to start their own
+              digital currency payment business. Our clients receive a
+              crypto-payment processor under their own brand out of the box
+              within a month. We handle all support, so customers can focus on
+              growing their business.
+            </p>
+            <ol class="whitelabel-content__list">
+              <li class="whitelabel-content__item">
+                Your own customisable payment form. The payment system is hosted
+                on your domain.
+              </li>
+              <li class="whitelabel-content__item">
+                Ready-to-use systems for receiving and making payments,
+                including аutomated hedging.
+              </li>
+              <li class="whitelabel-content__item">
+                Fast entry to the market.
+              </li>
+            </ol>
+            <button class="btn whitelabel__btn" type="button">
+              Additional features
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="18"
+                viewBox="0 0 15 18"
+                fill="#FFC266"
+              >
+                <path
+                  d="M0 10.3279L2.08134 8.29437L6.02871 12.2059L6.02871 0.184326L8.97129 0.184326L8.97129 12.2059L12.8947 8.29438L15 10.3279L7.5 17.8159L0 10.3279Z"
+                />
+                <path
+                  d="M0 10.3279L2.08134 8.29437L6.02871 12.2059L6.02871 0.184326L8.97129 0.184326L8.97129 12.2059L12.8947 8.29438L15 10.3279L7.5 17.8159L0 10.3279Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="whitelabel-content__box">
+            <div class="whitelabel__app">
+              <div class="app">
+                <div class="app__header">
+                  <div class="app-label"></div>
+                  <div class="app-label"></div>
+                  <div class="app-label"></div>
+                </div>
+                <div class="app__content">
+                  <img
+                    src="assets/images/app-whitelabel.png"
+                    alt="app-whitelabel"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="additional__list additional__list--hide">
+          <li class="additional__item">
+            customization according to the merchant's features on request to the
+            technical support;
+          </li>
+          <li class="additional__item">
+            adding new currencies, extension of API;
+          </li>
+          <li class="additional__item">cart (on merchant request);</li>
+          <li class="additional__item">
+            exports to excel (for example, by user transactions (on request));
+          </li>
+          <li class="additional__item">
+            the ability to embed a page with applications for operators in an
+            ERP or other system via an Iframe.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="support" id="support">
+      <div class="container">
+        <h3 class="title support__title">
+          <span>TECHNICAL</span><span>SUPPORT</span>
+        </h3>
+        <div class="support__content">
+          <div class="app support__app">
+            <div class="app__header">
+              <div class="app-label"></div>
+              <div class="app-label"></div>
+              <div class="app-label"></div>
+            </div>
+            <div class="app__content support__app-icon">
+              <img src="assets/images/app-support.png" alt="app-support" />
+            </div>
+          </div>
+          <ol class="support__list">
+            <li class="support__item">Integration support</li>
+            <li class="support__item">Troubleshooting</li>
+            <li class="support__item">Technical questions</li>
+            <li class="support__item">Updates and upgrades</li>
+            <li class="support__item">Customization and personalization</li>
+            <li class="support__item">Full cycle support</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="integration" id="integration">
+      <div class="container">
+        <h3 class="title integration__title">integration</h3>
+        <div class="integration__subtitle">How is the integration going</div>
+        <div class="integration__content">
+          <div class="integration__content-top">
+            <div class="integration__content-block--border">
+              <div class="integration__content-block">
+                Personal Area registration
+              </div>
+            </div>
+            <span class="devider">→</span>
+            <div class="integration__content-block--border">
+              <div class="integration__content-block">
+                Merchant requests the technical support to activate the store,
+                sends an email specified during registration or store ID (at the
+                moment in manual mode)
+              </div>
+            </div>
+          </div>
+          <div class="integration__content-bottom">
+            <span class="devider devider--rotate">→</span>
+            <div class="integration__content-block--border">
+              <div class="integration__content-block">
+                After activation, it is possible to integrate the API, test,
+                start processing
+              </div>
+            </div>
+            <span class="devider devider--rotate">→</span>
+            <button type="button" class="btn integration__btn">Try</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+
+      <div class="container">
+
+        <h4 class="title footer_title">Contact us</h4>
+
+        <div class="footer__content">
+
+          <div class="footer__info">
+
+            <p class="footer__text">
+
+              We like working with cool CEOs and ambitious projects. Leave your
+
+              phone number or e-mail and 1 of 4 of our managers will contact you to
+
+              in detail learn about your project.
+
+            </p>
+
+            <div class="social">
+
+              Our social media
+
+              <div class="social-list">
+
+                <a href="#" class="social__link twitter"></a>
+
+                <a href="#" class="social__link facebook"></a>
+
+                <a href="#" class="social__link instagram"></a>
+
+                <a href="#" class="social__link vk"></a>
+
+                <a href="#" class="social__link telegram"></a>
+
+                <a href="#" class="social__link youtube"></a>
+
+                <a href="#" class="social__link linkedin"></a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+          <form class="form footer__form">
+
+            <input
+
+              class="form__input form__input--light"
+
+              type="text"
+
+              placeholder="Name"
+
+            />
+
+            <input
+
+              class="form__input form__input--light"
+
+              type="text"
+
+              placeholder="Phone number"
+
+            />
+
+            <input
+
+              class="form__input form__input--light"
+
+              type="text"
+
+              placeholder="Email adress"
+
+            />
+
+            <button class="btn form__btn" type="submit">Send a request</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </footer>
+
+    
 
     <script src="./js/main.min.js"></script>
   </body>

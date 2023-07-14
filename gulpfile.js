@@ -83,6 +83,7 @@ function scripts() {
     "app/js/main.js",
     "app/js/fees.js",
     "app/js/business.js",
+    "app/js/gambling.js",
   ])
     .pipe(webpack(require("./webpack.config.js")))
     .pipe(dest("app/js"))
@@ -103,6 +104,7 @@ function watching() {
       "app/js/main.js",
       "app/js/fees.js",
       "app/js/business.js",
+      "app/js/gambling.js",
       "app/js/modules/*.js",
     ],
     scripts
@@ -123,17 +125,18 @@ function building() {
       "app/js/main.min.js",
       "app/js/fees.min.js",
       "app/js/business.min.js",
+      "app/js/gambling.min.js",
       "app/*.html",
     ],
     {
       base: "app",
       allowEmpty: true,
     }
-  ).pipe(dest("dist"));
+  ).pipe(dest("docs"));
 }
 
 function cleanDist() {
-  return src("dist").pipe(clean());
+  return src("docs").pipe(clean());
 }
 
 exports.scripts = scripts;

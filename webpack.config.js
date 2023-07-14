@@ -4,6 +4,7 @@ const config = {
     main: "./app/js/main.js",
     fees: "./app/js/fees.js",
     business: "./app/js/business.js",
+    gambling: "./app/js/gambling.js",
   },
   output: {
     filename: "[name].min.js",
