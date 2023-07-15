@@ -2473,6 +2473,8 @@ body {
   border-radius: 56px;
 
   padding: 1px;
+
+  cursor: pointer;
 }
 
 .shopping__card {
@@ -3034,3 +3036,356 @@ body {
 /* end-help */
 
 /* end-business apge */
+
+/* start-gambling apge */
+
+/* start-tools */
+
+.gambling {
+  overflow: hidden;
+
+  padding: 35px 0 133px;
+  .slick-dots li button:before {
+    opacity: 1;
+
+    color: $white;
+
+    font-size: 13px;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $yellow;
+  }
+  .slick-dots {
+    top: -31.5%;
+    left: 94%;
+
+    width: auto;
+
+    li {
+      margin: 0;
+    }
+  }
+  .slick-list {
+    padding: 0;
+  }
+  .slick-slide {
+    width: 1200px !important;
+
+    margin: 0;
+  }
+}
+
+.gambling-title {
+  color: $white;
+
+  font-family: "EuclidFlex";
+  font-size: 42px;
+
+  font-weight: 700;
+
+  margin-bottom: 38px;
+}
+
+.gambling__slider-btn {
+  padding: 16px 32px 18px;
+
+  border-radius: 28px;
+  border: 2px solid #433f49;
+
+  color: #fff;
+
+  text-align: center;
+
+  font-size: 20px;
+
+  line-height: 150%;
+
+  display: inline-flex;
+  align-items: center;
+
+  justify-content: space-between;
+
+  transition: color 500ms ease;
+  transition: background-color 500ms ease;
+
+  & + & {
+    margin-left: 45px;
+  }
+
+  svg {
+    margin-left: 24px;
+  }
+}
+
+.gambling__slider-btn--active {
+  border: none;
+
+  color: $bg;
+
+  background-color: $yellow;
+
+  svg {
+    fill: $bg;
+  }
+}
+
+.invoices {
+  max-width: 184px;
+}
+
+.exchange {
+  max-width: 200px;
+}
+
+.solutions {
+  max-width: 270px;
+}
+
+.gambling__slider {
+  margin-top: 60px;
+}
+
+.gambling__box-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gambling__box {
+  max-width: 587px;
+  width: 100%;
+
+  color: $white;
+}
+
+.gambling__box-title {
+  font-size: 26px;
+  font-weight: 700;
+
+  margin-bottom: 30px;
+}
+
+.gambling__box-text {
+  font-size: 20px;
+
+  font-weight: 400;
+
+  line-height: 130%;
+}
+
+.gambling__box-comment {
+  color: #97959b;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  position: relative;
+
+  margin-top: 55px;
+
+  padding-left: 60px;
+  &::before {
+    content: "";
+
+    height: 7px;
+    width: 27px;
+
+    background-color: $yellow;
+
+    position: absolute;
+    top: 15%;
+    left: 0;
+  }
+}
+
+/* end-tools */
+
+/* start-media */
+
+.gambling-text {
+  color: $white;
+
+  font-size: 22px;
+
+  line-height: 130%;
+
+  margin-bottom: 33px;
+
+  max-width: 870px;
+}
+
+.media__content {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.media__card {
+  max-width: 330px;
+  width: 100%;
+
+  &:hover {
+    background: linear-gradient(45deg, rgb(232, 178, 79), rgb(221, 71, 94));
+    .card__title {
+      color: $yellow;
+    }
+  }
+  .card__inner {
+    padding: 40px 40px 30px;
+  }
+  .card__date {
+    margin-top: 25px;
+  }
+  img {
+    margin-top: 60px;
+  }
+}
+
+.card__date {
+  color: #97959b;
+
+  font-family: "EuclidTriangle";
+  font-size: 18px;
+}
+
+.media {
+  overflow: hidden;
+
+  padding-bottom: 127px;
+
+  .slick-dots li button:before {
+    opacity: 1;
+
+    color: $white;
+
+    font-size: 13px;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $yellow;
+  }
+  .slick-dots {
+    top: -33.5%;
+    left: 94%;
+
+    width: auto;
+
+    li {
+      margin: 0;
+    }
+  }
+  .slick-list {
+    padding: 0;
+  }
+  .slick-slide {
+    width: 1200px !important;
+
+    margin: 0;
+  }
+}
+
+/* end-media */
+
+/* start-reviews */
+
+.reviews {
+  overflow: hidden;
+
+  padding-bottom: 120px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    background-image: url("../assets/images/sprite.svg#hero-bg");
+    background-position: 53%;
+    background-repeat: no-repeat;
+
+    height: 572px;
+    width: 100%;
+
+    top: 19%;
+    left: 55%;
+
+    z-index: -1;
+    rotate: 63deg;
+
+    filter: blur(30px);
+  }
+
+  .slick-dots li button:before {
+    opacity: 1;
+
+    color: $white;
+
+    font-size: 13px;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $yellow;
+  }
+  .slick-dots {
+    top: -36.6%;
+    left: 94%;
+
+    width: auto;
+
+    li {
+      margin: 0;
+    }
+  }
+  .slick-list {
+    padding: 0;
+  }
+  .slick-slide {
+    width: 1200px !important;
+
+    margin: 0;
+  }
+}
+
+.reviews__slider {
+  margin-top: 73px;
+}
+
+.reviews__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__card {
+  max-width: 588px;
+  width: 100%;
+
+  &:hover {
+    background: linear-gradient(45deg, rgb(232, 178, 79), rgb(221, 71, 94));
+  }
+  .card__title {
+    color: $yellow;
+
+    display: inline-block;
+
+    padding-top: 6px;
+    padding-left: 9px;
+  }
+  .card__text {
+    margin-top: 58px;
+
+    line-height: 150%;
+    letter-spacing: 1px;
+  }
+  .card__inner {
+    padding: 40px 40px 30px;
+  }
+  img {
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+  }
+}
+
+/* end-reviews */
+
+/* end-gambling apge */
