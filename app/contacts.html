@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header__container">
+      <div class="container">
         <a href="index.html" class="logo">
           <img
             class="logo__img svg-logo-dims"
@@ -43,8 +43,58 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="btn header__btn-sign">Sign in</button>
-        <button type="button" class="btn header__btn-lang">EN</button>
+        <nav class="mobile-menu">
+          <div class="mobile-menu__btn"></div>
+          <div class="burger-menu-overlay">
+            <ul class="burger-menu">
+              <li>
+                <a class="mobile-menu__item-link" href="index.html#features"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__item-link" href="index.html#advantages"
+                  >Advantages</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__item-link" href="index.html#support"
+                  >Technical support</a
+                >
+              </li>
+              <li>
+                <a class="mobile-menu__item-link" href="index.html#integration"
+                  >Integration</a
+                >
+              </li>
+              <li><a class="mobile-menu__item-link" href="fees.html">Fees</a></li>
+              <li>
+                <a class="mobile-menu__item-link" href="business.html">Business</a>
+              </li>
+              <li>
+                <a class="mobile-menu__item-link" href="gambling.html">Gambling</a>
+              </li>
+              <li>
+                <a class="mobile-menu__item-link" href="contacts.html"
+                  >Contact us</a
+                >
+              </li>
+              <li class="mobile-menu__item--hidden">
+                <a class="mobile-menu__item-link" href="#">Sign in</a>
+              </li>
+              <li class="mobile-menu__item--hidden">
+                <a class="mobile-menu__item-link" href="#">EN</a>
+              </li>
+              <li>
+                <div class="mobile-menu__btn-close"></div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="header__box">
+          <button type="button" class="btn header__btn-sign">Sign in</button>
+          <button type="button" class="btn header__btn-lang">EN</button>
+        </div>
       </div>
     </header>
     
@@ -175,5 +225,7 @@
     </footer>
 
     
+
+    <script src="./js/contacts.min.js"></script>
   </body>
 </html>

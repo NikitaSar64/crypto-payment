@@ -5,6 +5,7 @@ const config = {
     fees: "./app/js/fees.js",
     business: "./app/js/business.js",
     gambling: "./app/js/gambling.js",
+    contacts: "./app/js/contacts.js",
   },
   output: {
     filename: "[name].min.js",

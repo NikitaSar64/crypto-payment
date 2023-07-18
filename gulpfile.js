@@ -84,6 +84,7 @@ function scripts() {
     "app/js/fees.js",
     "app/js/business.js",
     "app/js/gambling.js",
+    "app/js/contacts.js",
   ])
     .pipe(webpack(require("./webpack.config.js")))
     .pipe(dest("app/js"))
@@ -105,6 +106,7 @@ function watching() {
       "app/js/fees.js",
       "app/js/business.js",
       "app/js/gambling.js",
+      "app/js/contacts.js",
       "app/js/modules/*.js",
     ],
     scripts
@@ -126,6 +128,7 @@ function building() {
       "app/js/fees.min.js",
       "app/js/business.min.js",
       "app/js/gambling.min.js",
+      "app/js/contacts.min.js",
       "app/*.html",
     ],
     {
