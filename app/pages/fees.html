@@ -10,7 +10,7 @@
     <!--=include header.html -->
     <div class="container">
       <div class="breadcrumbs">
-        <a href="index.html">Home</a>
+        <a data-lang="breadcrumbs" href="index.html">Home</a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="15"
@@ -22,7 +22,7 @@
             d="M8.11483 12.5L6.48804 10.8349L9.61723 7.67703L5.75133e-08 7.67703L1.88485e-07 5.32297L9.61723 5.32297L6.48804 2.18421L8.11483 0.5L14.1053 6.5L8.11483 12.5Z"
           />
         </svg>
-        <a href="contacts.html">Fees</a>
+        <a data-lang="breadcrumbs" href="contacts.html">Fees</a>
       </div>
     </div>
 
@@ -30,7 +30,8 @@
       <div class="container">
         <div class="transaction__content">
           <h1 class="title transaction__title">
-            ONE SIMPLE<span>TRANSACTION FEE</span>
+            <span data-lang="transaction">ONE SIMPLE</span
+            ><span data-lang="transaction">TRANSACTION FEE</span>
           </h1>
           <div class="app transaction__app transaction__app--mobile">
             <div class="app__header">
@@ -42,11 +43,14 @@
               <img src="assets/images/app-support.png" alt="app-support" />
             </div>
           </div>
-          <p class="transaction__text">
+          <p data-lang="transaction-text" class="transaction__text">
             We like to keep things easy. We charge a 0.5% fee on incoming crypto
             payments*. No setup fees, no monthly fees, no hidden fees. payments.
           </p>
-          <div class="transaction__text-info attention-icon">
+          <div
+            data-lang="transaction-text"
+            class="transaction__text-info attention-icon"
+          >
             * A 1% fee is charged on incoming token payments
           </div>
         </div>
@@ -65,7 +69,7 @@
 
     <section class="payments">
       <div class="container">
-        <h2 class="fees-title">Incoming Payments</h2>
+        <h2 data-lang="payments" class="fees-title">Incoming Payments</h2>
         <div class="payments__content">
           <div class="payment-item">
             <div class="wallet-icon">
@@ -77,11 +81,18 @@
                 />
               </div>
             </div>
-            <div class="payment-item__title">To Balance</div>
-            <div class="payment-item__text">
+            <div data-lang="payment-card-1" class="payment-item__title">
+              To Balance
+            </div>
+            <div data-lang="payment-card-1" class="payment-item__text">
               Payments are deposited to your CoinPayments wallet
             </div>
-            <div class="payment-item__rate attention-icon">0.5%</div>
+            <div
+              data-lang="payment-card-1"
+              class="payment-item__rate attention-icon"
+            >
+              0.5%
+            </div>
           </div>
           <div class="payment-item">
             <div class="wallet-icon">
@@ -94,10 +105,12 @@
               </div>
             </div>
             <div class="payment-item__title">ASAP</div>
-            <div class="payment-item__text">
+            <div data-lang="payment-card-2" class="payment-item__text">
               Payments are forwarded to an external address
             </div>
-            <div class="payment-item__rate">0.5% + Network Fee</div>
+            <div data-lang="payment-card-2" class="payment-item__rate">
+              0.5% + Network Fee
+            </div>
           </div>
           <div class="payment-item">
             <div class="wallet-icon">
@@ -109,19 +122,25 @@
                 />
               </div>
             </div>
-            <div class="payment-item__title">Nightly</div>
-            <div class="payment-item__text">
+            <div data-lang="payment-card-3" class="payment-item__title">
+              Nightly
+            </div>
+            <div data-lang="payment-card-3" class="payment-item__text">
               Payments are accumulated and forwarded to an address in one
               nightly batch
             </div>
-            <div class="payment-item__rate">0.5% + Network Fee</div>
+            <div data-lang="payment-card-3" class="payment-item__rate">
+              0.5% + Network Fee
+            </div>
           </div>
         </div>
         <div class="payments__wrapper">
           <div class="payments__about">
-            <div class="payments__about-title">About Network Fees</div>
+            <div data-lang="payments-fees" class="payments__about-title">
+              About Network Fees
+            </div>
             <span class="devider">→</span>
-            <p class="text payments__about-text">
+            <p data-lang="payments-fees-text" class="text payments__about-text">
               In order to send cryptocurrency, you need to pay a network fee to
               the cryptocurrency miners. Network fees vary based on which
               cryptocurrency you are trying to send and how busy the networks
@@ -134,12 +153,14 @@
 
     <section class="withdrawal">
       <div class="container">
-        <h2 class="fees-title">Current Withdrawal/Network Fees</h2>
+        <h2 data-lang="withdrawal" class="fees-title">
+          Current Withdrawal/Network Fees
+        </h2>
         <div class="withdrawal__content">
           <div class="withdrawal__box">
             <div class="withdrawal__box-header">
-              <div>Currency</div>
-              <div>TX Fee</div>
+              <div data-lang="withdrawal-text-1">Currency</div>
+              <div data-lang="withdrawal-text-1">TX Fee</div>
             </div>
             <div class="withdrawal__box-item">
               <div class="withdrawal__box-currency bitcoin">Bitcoin BTC</div>
@@ -173,8 +194,8 @@
           </div>
           <div class="withdrawal__box">
             <div class="withdrawal__box-header">
-              <div>Currency</div>
-              <div>TX Fee</div>
+              <div data-lang="withdrawal-text-2">Currency</div>
+              <div data-lang="withdrawal-text-2">TX Fee</div>
             </div>
             <div class="withdrawal__box-item">
               <div class="withdrawal__box-currency bitcoin">Bitcoin BTC</div>
@@ -208,7 +229,7 @@
           </div>
         </div>
         <button type="button" class="btn withdrawal__btn">
-          Show more
+          <span data-lang="withdrawal-btn">Show more</span>
           <svg
             width="15"
             height="18"
